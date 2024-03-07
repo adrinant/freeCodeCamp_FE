@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Favourite Football Club Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Favourite Football Club Survey Form</h1>
+    <p id="description">Thank you for taking the time to respond</p>
+    <div id="container">
+      <form id="survey-form">
+      <div>
+        <label for="name" id="name-label">Enter your Name: 
+          <input id="name" type="text" placeholder="David Beckham" required></input>
+        </label>
+      </div>
+      <div>
+        <label for="email" id="email-label">Enter your Email:
+          <input id="email" type="email" placeholder="example@gmail.com" required></input>
+        </label>
+      </div>
+      <div>
+        <label for="number" id="number-label">Whats your favourite jersey number:
+          <input id="number" type="number" placeholder="7" required min="0" max="99"></input>
+        </label>
+      </div>
+      <div>
+        <label for="league" id="dropdown-label">Whats your favourite Football League?
+          <select id="dropdown" required>
+            <option value="0">select your favourite league</option>
+            <option value="1">Premier League</option>
+            <option value="2">Bundesliga</option>
+            <option value="3">LaLiga</option>
+            <option value="4">Serie A</option>
+            <option value="5">Ligue 1</option>
+            <option value="6">Eredivise</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <legend>What strategy entertain you the most? (required)</legend>
+      </div>
+      <div>
+        <label for="tiki-taka" id="tactics-label">
+          <input id="tiki-taka" name="strategy" type="radio" value="1" class="inline"> Tiki Taka
+        </label>
+        <label for="total-football" id="tactics-label">
+          <input id="total-football" name="strategy" type="radio" value="2" class="inline"> Total Football
+        </label>
+        <label for="kick-n-rush" id="tactics-label">
+          <input id="kick-n-rush" name="strategy" type="radio" value="3" class="inline" checked> Kick & Rush
+        </label>
+      </div>
+      <div>
+        <legend>Who's your favourite player from top 5 2023 Ballon d'Or Nominees? (required)</legend>
+        <label for="messi" id="ballondor-label">
+          <input id="messi" name="ballondor" type="checkbox" value="1" class="inline" checked>
+            Lionel Messi
+          </input>
+        </label>
+        <label for="haaland" id="ballondor-label">
+          <input id="haaland" name="ballondor" type="checkbox" value="2" class="inline">
+            Erling Haaland
+          </input>
+        </label>
+        <label for="mbappe" id="ballondor-label">
+          <input id="mbappe" name="ballondor" type="checkbox" value="3" class="inline">
+            Kylian Mbappe
+          </input>
+        </label>
+        <label for="kevin" id="ballondor-label">
+          <input id="kevin" name="ballondor" type="checkbox" value="4" class="inline">
+            Kevin De Bruyne
+          </input>
+        </label>
+        <label for="rodri" id="ballondor-label">
+          <input id="rodri" name="ballondor" type="checkbox" value="5" class="inline">
+            Rodri
+          </input>
+        </label>
+      </div>
+      <div>
+        <label for="team" id="team-label"> Whats your favourite football team?
+          <input id="team" name="team" type="text" required></input>
+        </label>
+      </div>
+      <div>
+        <label for="describe" id="describe-label"> Describe why you like your team
+          <textarea id="describe" name="describe" cols="3" rows="6" required></textarea>
+        </label>
+      </div>
+      <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
